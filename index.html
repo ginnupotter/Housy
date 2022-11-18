@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="icon" type="image/png" href="./img/buttons/seychellesicon.png">
+  <title id="title">Fun With Flags</title>
+  <meta name="description" content="A hobby project to build a game for kids interested in flags" />
+  <meta name="Fun with Flags" content="A hobby project to build a game for kids interested in flags" />
+  <meta name="googlebot" content="notranslate" />
+<!--   <link rel="stylesheet" href="wordStyle.css">
+  <link rel="stylesheet" href="popUp.css"> -->
+  <script src="./flagScript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="flagStyle.css">
+
+</head>
+
+<body class="bodycenter" onload="onPageLoad()">
+
+  <h2 class="center" style="text-align: center; font-size: 35px; text-underline-position: below;"><u>FUN WITH FLAGS</u></h2><br><br>
+  
+  <table class="center">
+    <tr>
+      <td> <input id="1" onclick="checkAnswer(this.id)" class="flagImg" type="image" src="./img/flags/noflag.png" width="240" height="160"/> </td>
+      <td><img id="centerImg" style="visibility: hidden;" src="./img/buttons/leftright.png" width="150" height="100"></td>
+      <td> <input id="2" onclick="checkAnswer(this.id)" class="flagImg" type="image" src="./img/flags/noflag.png" width="240" height="160"/></td>
+    </tr>
+    <tr>
+      <td class="center" colspan="3" id="ques" style="word-wrap: break-word;"></td>
+    </tr>
+    <tr>
+      <td class="center" colspan="3"><img id="cueImg" src="./img/buttons/button.gif" class="invisibleImg"></td>
+    </tr>
+    <tr>
+      <td class="center" colspan="3" id="startTd"><input type="image" id="startButton" src="./img/buttons/button.gif" class="bigImage" onclick="quizNext()"></td>
+    </tr>
+    
+
+  </table>
+
+ <audio id="countryAudio1">
+  <source src="">
+ </audio>
+ <audio id="countryAudio2">
+  <source src="">
+ </audio>
+
+ <audio id="announce">
+   <source src="">
+ </audio>
+ 
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+.grid-container {
+    display: grid;
+    }
+
+    html, body {
+    height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: top;
+        font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+        /* background-image: url('Wordle.jpg'); */
+    }
+
+    .center {
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      background-color: rgb(228, 248, 250);
+    }
+    .bodycenter {
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .bigImage {
+      width:auto;
+      height:auto;
+    }
+
+    .smallImage {
+      width: 100px;
+      height: 100px;
+    }
+
+    .flagImg {
+      border: black;
+      
+    }
+
+    .centerImage50 {
+      width:  50%;
+      height: 50%;
+    }
+
+    .invisibleImg {
+      visibility: hidden;
+    }
